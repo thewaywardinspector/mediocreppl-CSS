@@ -1,0 +1,49 @@
+/*Flair designs for users and mods*/
+.flair-greycyan { background-color: #84927a; color: #40e0d0; }
+.flair-emily { background-color: #4c4cff; color: #000000; }
+.flair-pleb { background-color: #725e43; color: #ef3f23; }
+
+/*Flair designs for posts (I have too many, we are only using 3 atm plz make up more*/
+.linkflairlabel { max-width: none; }
+.linkflair-green .linkflairlabel {color:green}
+.linkflair-blue .linkflairlabel {color:blue}
+.linkflair-purple .linkflairlabel {color:purple}
+.linkflair-grey .linkflairlabel {color:#84927a}
+.linkflair-cyan .linkflairlabel {color:cyan} 
+
+/*Changes the Subscribers and ppl here now text (We can also change the color of the subscribe button, idk how <todo>)*/
+ .titlebox .word { display: none }
+  .titlebox .number:after { content: " Subscriberinos"; }
+  .titlebox .users-online span.number:after { content: " ppl here now"; }
+
+/*Changes what the mod box says*/
+.sidecontentbox .helplink + .title h1 { font-size: 0}
+
+.sidecontentbox .helplink + .title h1:before { font-size: small; content: "The ppl behind it all" } 
+
+/*Make rainbows everytime a mod distinguishes a comment*/
+a.author.moderator, .res a.author.moderator {
+    color:white!important;
+    background: -moz-linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    background: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet);
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+/*Design for sticky posts*/
+/*commented the below out bc it doesn't look that good, if u find a way to make it nice go ahead*/
+/*.stickied {
+    border:1px solid blue;
+}*/
+.stickied .title {
+    color:green!important;
+}
+.stickied-tagline {
+    color:green!important;
+}
+.stickied-tagline{
+  font-size: 0;
+}
+.stickied-tagline::after{
+   content:"stickied post";
+   font-size: x-small;
+}
